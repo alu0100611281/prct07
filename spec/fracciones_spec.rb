@@ -66,4 +66,8 @@ it " Se debe restar dos fracciones con - y dar el resultado de forma reducida" d
 @frac_obj_2.resta(@frac_obj_5).should=="Fraction 0/1"
 end
 
+it "Se debe multiplicar dos fracciones con * y dar el resultado de forma reducida" do
+@frac_obj_2.*(@frac_obj_5).should=="Fraction 1/4"
+end
+
 end
