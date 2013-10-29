@@ -41,4 +41,8 @@ denom2=aux
 "Fraction #{num2}/#{denom2}"
 end
 
+def -
+"Fraction #{-num}/#{denom}"
+end
+
 end
