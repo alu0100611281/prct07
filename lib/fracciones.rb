@@ -33,4 +33,12 @@ float=@num/@denom
 end
 end
 
+
+def reciprocal
+aux=@num
+num2=@denom
+denom2=aux
+"Fraction #{num2}/#{denom2}"
+end
+
 end
