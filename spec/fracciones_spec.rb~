@@ -70,4 +70,7 @@ it "Se debe multiplicar dos fracciones con * y dar el resultado de forma reducid
 @frac_obj_2.*(@frac_obj_5).should=="Fraction 1/4"
 end
 
+it "Se debe dividir dos fracciones con / y dar el resultado de forma reducida" do
+@frac_obj_2./(@frac_obj_5).should=="Fraction 1/1"
+end
 end

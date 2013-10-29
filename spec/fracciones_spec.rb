@@ -73,4 +73,25 @@ end
 it "Se debe dividir dos fracciones con / y dar el resultado de forma reducida" do
 @frac_obj_2./(@frac_obj_5).should=="Fraction 1/1"
 end
+
+it " Se debe calcular el resto dos fracciones con % y dar el resultado de forma reducida" do
+@frac_obj_2.%(@frac_obj_4).should=="Fraction -3/10"
+end
+
+it "Se debe de poder comprobar si una fracion es menor que otra" do
+@frac_obj_4.<=>(@frac_obj_2).should==-1
+end
+
+it "Se debe de poder comprobar si una fracion es mayor que otra" do
+@frac_obj_2.<=>(@frac_obj_4).should==1
+end
+
+it " Se debe de poder comprobar si una fracion es menor o igual que otra" do
+[-1,0].include?@frac_obj_4.<=>(@frac_obj_4)
+end
+
+it "Se debe de poder comprobar si una fracion es mayor o igual que otra" do
+[1,0].include?@frac_obj_2.<=>(@frac_obj_4)
+end
+
 end
