@@ -7,7 +7,7 @@ describe Frac do
 before :each do
 @frac_obj_1=Frac.new(0,1)
 @frac_obj_2=Frac.new(2,4)
-
+@frac_obj_3=Frac.new(0,1)
 
 end
 
